@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>VR Revision</title>
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+    <script src="https://unpkg.com/aframe-spe-particles-component@^
+    1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+</head>
+<body>
+
+    <a-scene id="scene">
+        <a-sky color="#000000"></a-sky>
+
+        <a-camera position="0 0 30"></a-camera>
+
+        <a-entity position="0 1 0" spe-particles="
+            color: purple, blue, green, white;
+            distribution: sphere;
+            randomize-velocity: false;
+            radius: 5;
+            particle-count: 400;
+            velocity: 3;
+            velocity-spread: 24;
+            drag: 0;
+            max-age: 1;
+            duration: -1;
+            blending: multiplicative;
+            active-multiplier: 400;
+            size: 1, 1, 1, 0">
+        </a-entity>
+    </a-scene>
+
+</body>
+
+</html>
